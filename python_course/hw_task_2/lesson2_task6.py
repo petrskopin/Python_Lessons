@@ -16,21 +16,20 @@ def check_if_int(fn):
 
     return wrapper
 
-
+@check_if_int
 def price_calculation(price, tax):
     return price * (1 + tax)
 
-
+@check_if_int
 def new_test_function(a):
     return a ** a
 
 
-price_calculation = check_if_int(price_calculation)
+
 print(price_calculation(100, 1))
 
 # uncomment line below to raise exception
 # print(price_calculation(100,0.5))
 
+
 print(new_test_function(3))
-new_test2 = check_if_int(new_test_function)
-print(new_test2(3))
