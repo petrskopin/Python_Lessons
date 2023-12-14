@@ -95,7 +95,7 @@ class Face:
                     break
 
 
-#pic = Face('video_1.mp4', False)
+pic = Face('video_1.mp4', False)
 pic = Face('img.jpg', True)
 pic.prepare(600)
 pic.detect_frame(1500)
